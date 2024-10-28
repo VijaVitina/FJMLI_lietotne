@@ -1,0 +1,20 @@
+Lietotnē ļautu mainīt:
+•	Fona krāsu,
+•	Pogu krāsu,
+•	Teksta krāsu
+T.i. pieejamas tēmas, ne katru atsevišķi mainīt.
+
+Sākotnējā lietošanas reizē ar tiktu nolasīta sistēmas krāsu shēma ar React Native iebūvēto funkciju Appearance.getColorScheme().
+
+Kad lietotājs nomaina krāsu shēmu lietotnē, sistēma saglabā šo izvēli AsyncStorage.
+Pēc tam lietotne izmantos šo izvēlēto motīvu neatkarīgi no tā, kāds ir ierīces sistēmas motīvs.
+
+Ja lietotājs manuāli izvēlas citu krāsu shēmu, lietotne ignorēs turpmākās sistēmas krāsu shēmas izmaiņas.
+To panāktu, pārtraucot reaģēšanu uz sistēmas motīvu izmaiņām pēc tam, kad lietotājs manuāli izvēlas savu shēmu.
+
+Tika apskatīta arī iespēja izmantot Secure Storage, bet nolemts par labu AsyncStorage, jo krāsu shēmas izvele nav gluži sensitīvi dati.
+
+Potenciālās bibliotēkas krāsu shēmu pārvaldībai:
+React Native Paper un Styled Components
+
+Globālajai stāvokļa pārvaldībai izmantotu bibliotēka Redux.
